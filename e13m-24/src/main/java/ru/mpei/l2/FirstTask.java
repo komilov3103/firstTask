@@ -1,5 +1,7 @@
 package ru.mpei.l2;
 
+import java.util.Arrays;
+
 public class FirstTask {
     public static void main(String[] args) {
         int[] array = {7, 6, 2, 5, 3};
@@ -14,9 +16,11 @@ public class FirstTask {
             }
         }
 
-        for (int i = 0; i < array.length; i++){
-            System.out.print(array[i] + " ");
-        }
+//        for (int i = 0; i < array.length; i++){
+//            System.out.print(array[i] + " ");
+//        }
+
+        System.out.println(Arrays.toString(array));
 
         double median = 0;
         int middleElement = array.length / 2;
@@ -25,7 +29,6 @@ public class FirstTask {
         } else {
             median = array[middleElement];
         }
-        System.out.println();
         System.out.println(median);
     }
 }
